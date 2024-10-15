@@ -1,0 +1,239 @@
+html {
+    box-sizing: border-box;
+    }
+    *,*:before,*:after {
+        box-sizing: border-box;
+    
+    }
+    
+    @font-face {
+        font-family: "TTLakes";
+        font-style: medium;
+        font-weight: 500;
+         
+        src: local("TTLakes"),
+              
+             url("./font/TTLakes-Medium.woff") format("woff"),
+             url("./font/TTLakes-Medium.ttf") format("ttf"),
+             url("./font/TTLakes-Medium.eot") format("eot");
+    
+      }
+      
+    @font-face {
+        font-family: "TTLakes";
+        font-style: normal;
+        font-weight: 400;
+         
+        src: local("TTLakes"),
+              
+             url("./font/TTLakes-Regular.woff") format("woff"),
+             url("./font/TTLakes-Regular.ttf") format("ttf"),
+             url("./font/TTLakes-Regular.eot") format("eot");
+    
+      }
+      @font-face {
+        font-family: "TTLakes";
+        font-style: bold;
+        font-weight: 700;
+         
+        src: local("TTLakes"),
+              
+             url("./font/TTLakes-Bold.woff") format("woff"),
+             url("./font/TTLakes-Bold.ttf") format("ttf"),
+             url("./font/TTLakes-Bold.eot") format("eot");
+    
+      }
+    /* Ширина экрана 320*/
+    body {
+        font-family: "TTLakes", "Arial", sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        margin:0;
+        padding: 0px;
+        
+    }
+    .conteiner{
+        width:320px;
+        margin: 0px;
+        padding: 0px;
+       
+        
+    }
+    
+    /* Хэдер*/
+   
+    
+    .menu {
+        
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 86px;
+    
+        padding: 0 24px;
+        
+        }
+    .menu button {
+        
+        width:40px;
+        height:40px;
+        border-radius: 50%;
+        border:none;
+        padding:0;
+        transition-duration: 1s;
+    }
+  
+    .menu__burger {
+        background-image: url("./img/burger.png");
+    }
+    .menu__logo {
+        
+        width:97px;
+        min-height:51px;
+        background-image: url("./img/Group.png");
+        position: absolute;
+        left: 80.73px;
+        top: 18.73px;
+}
+ 
+    .menu__seach {
+        background-image: url("./img/search.png");
+        background-repeat: no-repeat;
+    }
+  
+    /* Основной контент */
+  
+    .submenu {
+        display: flex;
+        height:100%;
+        width: 100%;
+        flex-direction: column;
+        
+        margin: 0;
+        padding: 0;
+        margin-top: 16px;
+    }
+        
+  
+    .submenu__link {
+     
+        display: flex;
+        margin:0;
+    height:56px;
+    }
+    
+ 
+    .submenu__button{
+        border: none;
+        font-size: 16px;
+        font-weight: 500;
+        padding:0;
+        padding-left:24px;
+        height:24px;
+        background-color: white;
+        transition-duration: 0.5s;
+      
+    }
+
+    .submenu__button-activ{
+        color: #7e7e82;
+        
+    }
+    .submenu li:nth-child(2) button{
+        
+    
+        margin-top: 8px;
+    }
+    .submenu__button-activ::before {
+        content:"";
+        display:inline-block;
+        background-image: url("./img/highlight.png");
+        height:32px;
+        width: 4px;
+        position: relative;
+        left:-24px;
+        top:8px;
+    }
+  /*Футтер*/
+  .submenu-foot__tell {
+    background-image: url("./img/call.png");
+  }  
+  .submenu-foot__message {
+    background-image: url("./img/chat.png");
+  }  
+  .submenu-foot__contact {
+    background-image: url("./img/profile.png");
+  }  
+  .submenu-foot {
+    margin-left:24px;
+  }
+  .submenu-foot button {
+        
+    width:40px;
+    height:40px;
+    border-radius: 50%;
+    border:none;
+    padding:0;
+    margin-right: 16px;
+    transition-duration: 1s;
+}
+.conteiner__footer{
+    height: 488px;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    
+}
+.lengv{
+    margin-bottom: 32px;
+    margin-left: 24px;
+    margin-top:40px;
+}
+.lengv button {
+    border:none;
+    font-weight: 500;
+font-size: 16px;
+line-height: 150%;
+text-transform: uppercase;
+background-color: white;
+transition-duration: 200ms;
+
+}
+.footer__phon{
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 133%;
+    margin-left: 24px;
+}
+.footer__mail{
+    margin-left: 24px;
+    margin-bottom: 12px;
+    font-weight: 500;
+font-size: 16px;
+line-height: 150%;
+letter-spacing: -0.01em;
+margin-top: 16px;
+}
+.lengv button:first-child{
+    color: #7e7e82;
+}
+.menu button:hover,
+.submenu-foot button:hover
+{
+    transform: scale(1.5) rotate(360deg);
+    box-shadow: 0 0 5px 2px  #0f3046;
+    
+   
+}
+.submenu__link button:hover {
+text-decoration: underline;
+transform:translateX(10px);
+text-transform: uppercase;
+color:#0a96f4;
+
+}
+.lengv button:hover{
+    color:chocolate;
+    
+}
