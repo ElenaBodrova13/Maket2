@@ -233,11 +233,13 @@ margin-top: 16px;
 }
 .submenu__link button:hover {
 text-decoration: underline;
-transform:translateX(10px);
 text-transform: uppercase;
 color:#0a96f4;
 
 }
+
+
+
 .lengv button:hover{
     color:chocolate;
     
